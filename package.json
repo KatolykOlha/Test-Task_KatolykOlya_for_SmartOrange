@@ -1,0 +1,33 @@
+{
+  "name": "test-task_katolykolya_for_smartorange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatolykOlha/Test-Task_KatolykOlya_for_SmartOrange.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatolykOlha/Test-Task_KatolykOlya_for_SmartOrange/issues"
+  },
+  "homepage": "https://github.com/KatolykOlha/Test-Task_KatolykOlya_for_SmartOrange#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.93.2"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
