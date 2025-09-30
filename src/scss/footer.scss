@@ -38,6 +38,7 @@
       gap: 20px;
       justify-content: space-between;
       align-items: center;
+      padding-right: 90px;
       div {
         height: 1px;
         flex: 1 0 0;
@@ -106,13 +107,33 @@
 }
 
 .footer-img {
-  width: 50%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   .footer-img__picture {
     width: 830px;
     height: 680px;
+  }
+
+  .footer-img__text-decoration--black,
+  .footer-img__text-decoration--multicolor {
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90%; /* 86.4px */
+    letter-spacing: -3.84px;
+    position: absolute;
+    color: #eff3f5;
+    mix-blend-mode: exclusion;
+  }
+  .footer-img__text-decoration--black {
+    top: 50px;
+    left: 0;
+  }
+  .footer-img__text-decoration--multicolor {
+    bottom: 50px;
+    right: 150px;
   }
 }

@@ -1,5 +1,6 @@
 .header-content {
   width: 100%;
+  max-width: 1920px;
   height: 468px;
   display: flex;
   flex-direction: column;
@@ -7,7 +8,7 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
 
   .hero__logo {
     position: absolute;
@@ -35,6 +36,24 @@
     }
     .hero-slider_arrow-right {
       right: 60px;
+    }
+  }
+
+  .hero__decoration {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 60px 25px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    div {
+      height: 1px;
+      flex: 1 0 0;
+      background-color: #0a0f13;
     }
   }
 }

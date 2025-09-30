@@ -70,6 +70,7 @@ function serve() {
     notify: false,
   });
   watch(paths.html, html);
+  watch("src/views/**/*.html", html);
   watch(paths.scss, styles);
   watch(paths.js, scripts);
   watch(paths.img, images);
