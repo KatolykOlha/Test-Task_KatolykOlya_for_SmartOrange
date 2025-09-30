@@ -5,7 +5,7 @@ const cleanCSS = require("gulp-clean-css");
 const terser = require("gulp-terser");
 // const imagemin = require("gulp-imagemin");
 const sourcemaps = require("gulp-sourcemaps");
-// const fileInclude = require("gulp-file-include");
+const fileInclude = require("gulp-file-include");
 const browserSync = require("browser-sync").create();
 const del = require("del");
 
@@ -20,12 +20,10 @@ const paths = {
 
 // HTML
 function html() {
-  return (
-    src(paths.html)
-      // .pipe(fileInclude({ prefix: "@@", basepath: "@file" }))
-      .pipe(dest(paths.dist))
-      .pipe(browserSync.stream())
-  );
+  return src(paths.html)
+    .pipe(fileInclude({ prefix: "@@", basepath: "@file" }))
+    .pipe(dest(paths.dist))
+    .pipe(browserSync.stream());
 }
 
 // SCSS → CSS

@@ -1,0 +1,118 @@
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 200px;
+
+  .contacts__name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: -0.48px;
+    margin-bottom: 23px;
+  }
+
+  .contacts__text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+    letter-spacing: -0.4px;
+  }
+}
+
+.footer-contacts {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4 * 1fr;
+  gap: 20px;
+  justify-items: start;
+
+  .contacts__title {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    width: 100%;
+
+    .contacts__title-decoration {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        height: 1px;
+        flex: 1 0 0;
+        background-color: #0a0f13;
+      }
+      p {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: -0.28px;
+      }
+    }
+
+    .contacts__title-name {
+      font-size: 96px;
+      font-weight: 400;
+      line-height: 90%; /* 86.4px */
+      letter-spacing: -3.84px;
+      margin-top: 25px;
+      margin-bottom: 83px;
+    }
+  }
+  .contacts__content-office {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .contacts__content-btn-map {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin-bottom: 84px;
+  }
+  .contacts__content-tels {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+
+    .tel-number {
+      margin-left: 36px;
+      margin-bottom: 15px;
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: #737373;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: -0.28px;
+        text-transform: uppercase;
+        margin-left: 12px;
+      }
+    }
+  }
+  .contacts__content-medias {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    .contacts__content-medias-icons {
+      display: flex;
+      justify-content: start;
+      gap: 4px;
+    }
+  }
+  .contacts__content-email {
+    grid-column: 2 / 2;
+    grid-row: 4 / 5;
+  }
+}
+
+.footer-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-img__picture {
+    width: 830px;
+    height: 680px;
+  }
+}
