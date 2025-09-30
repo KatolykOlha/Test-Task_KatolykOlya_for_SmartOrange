@@ -77,3 +77,4 @@ function serve() {
 }
 
 exports.default = series(clean, parallel(html, styles, scripts, images), serve);
+exports.build = series(clean, parallel(html, styles, scripts, images));
