@@ -39,6 +39,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 210px;
+  cursor: pointer;
 
   .load-more {
     display: flex;
@@ -51,5 +52,6 @@
     text-transform: uppercase;
     border-color: transparent;
     border-bottom: 1px solid #0a0f13;
+    cursor: pointer;
   }
 }
